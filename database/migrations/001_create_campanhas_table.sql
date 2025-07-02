@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS `campanhas` (
+    `id` INT AUTO_INCREMENT PRIMARY KEY,
+    `nome` VARCHAR(255) NOT NULL,
+    `descricao` TEXT,
+    `data_inicio` DATE NOT NULL,
+    `data_fim` DATE NOT NULL,
+    `recorrencia` VARCHAR(50) NOT NULL,
+    `status` TINYINT(1) NOT NULL DEFAULT 1,
+    `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    `updated_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);

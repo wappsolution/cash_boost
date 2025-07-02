@@ -1,4 +1,4 @@
-<h1 class="text-3xl font-bold text-gray-800 mb-6">Dashboard Overview</h1>
+<h1 class="text-3xl font-bold text-gray-800 mb-6 flex items-center"><i class="fas fa-tachometer-alt mr-3"></i> Dashboard</h1>
 
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
     <!-- Card 1 -->
@@ -7,7 +7,7 @@
             <h2 class="text-lg font-semibold text-gray-700">Total Gasto</h2>
             <div class="text-green-500 text-2xl"><i class="fas fa-dollar-sign"></i></div>
         </div>
-        <p class="text-3xl font-bold text-gray-900">R$ 12.345,00</p>
+        <p class="text-3xl font-bold text-gray-900">R$ <?php echo number_format($total_gasto, 2, ',', '.'); ?></p>
         <p class="text-sm text-gray-500">+5% desde o mês passado</p>
     </div>
 
@@ -17,8 +17,8 @@
             <h2 class="text-lg font-semibold text-gray-700">Campanhas Ativas</h2>
             <div class="text-blue-500 text-2xl"><i class="fas fa-bullhorn"></i></div>
         </div>
-        <p class="text-3xl font-bold text-gray-900">15</p>
-        <p class="text-sm text-gray-500">3 novas campanhas esta semana</p>
+        <p class="text-3xl font-bold text-gray-900"><?php echo $campanhas_ativas; ?></p>
+                <p class="text-sm text-gray-500"><?php echo $novas_campanhas_semana; ?> novas campanhas esta semana</p>
     </div>
 
     <!-- Card 3 -->

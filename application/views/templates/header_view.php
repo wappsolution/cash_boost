@@ -15,7 +15,7 @@
                 <button id="sidebarToggle" class="text-gray-600 focus:outline-none mr-4">
                     <i class="fas fa-bars text-xl"></i>
                 </button>
-                <div class="text-xl font-semibold text-gray-800">Cash Boost Admin</div>
+                <a href="<?php echo site_url('dashboard'); ?>" class="text-xl font-semibold text-gray-800 hover:text-gray-600">Cash Boost Admin</a>
             </div>
             <div class="flex items-center space-x-4">
                 <span class="text-gray-600">Bem-vindo, Admin!</span>
@@ -29,10 +29,10 @@
             <!-- Sidebar -->
             <aside id="sidebar" class="w-64 bg-gray-800 text-white p-6 space-y-6 transition-all duration-300 ease-in-out">
                 <nav>
-                    <a href="#" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white flex items-center">
+                    <a href="<?php echo site_url('dashboard'); ?>" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white flex items-center">
                         <i class="fas fa-tachometer-alt mr-3"></i> <span class="menu-text">Dashboard</span>
                     </a>
-                    <a href="#" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white flex items-center">
+                    <a href="<?php echo site_url('campanhas'); ?>" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white flex items-center">
                         <i class="fas fa-bullhorn mr-3"></i> <span class="menu-text">Campanhas</span>
                     </a>
                     <a href="#" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white flex items-center">
