@@ -16,6 +16,11 @@ class Dashboard extends CI_Controller {
         $data['campanhas_ativas'] = $this->Campanhas_model->countActiveCampanhas();
         $data['novas_campanhas_semana'] = $this->Campanhas_model->countNewCampanhasThisWeek();
 
+        // AIDEV-GENERATED: Dados para o Campeão de Resgates
+        $nomes_funcionarios = ['João Silva', 'Maria Souza', 'Pedro Almeida', 'Ana Costa', 'Carlos Lima'];
+        $data['campeao_nome'] = $nomes_funcionarios[array_rand($nomes_funcionarios)];
+        $data['campeao_resgatado'] = rand(100, 500); // Valor aleatório entre 100 e 500
+
         $this->load->view('templates/header_view');
         $this->load->view('dashboard_view', $data);
         $this->load->view('templates/footer_view');

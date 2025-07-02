@@ -1,6 +1,18 @@
 <h1 class="text-3xl font-bold text-gray-800 mb-6 flex items-center"><i class="fas fa-tachometer-alt mr-3"></i> Dashboard</h1>
 
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+    <!-- Card Campeão de Resgates -->
+    <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-yellow-500">
+        <div class="flex items-center justify-between mb-4">
+            <h2 class="text-lg font-semibold text-gray-700">🏆 Campeão de Resgates</h2>
+            <div class="text-yellow-500 text-2xl"><i class="fas fa-trophy"></i></div>
+        </div>
+        <p class="text-xl font-bold text-gray-900">Funcionário: <?php echo $campeao_nome; ?></p>
+        <p class="text-xl font-bold text-gray-900 mb-2">Total Resgatado: R$ <?php echo number_format($campeao_resgatado, 2, ',', '.'); ?></p>
+        <p class="text-sm text-gray-600">Parabéns, <?php echo $campeao_nome; ?>! Você é o destaque do mês!</p>
+        <p class="text-sm text-gray-500">Continue participando das campanhas e você pode ser o próximo campeão!</p>
+    </div>
+
     <!-- Card 1 -->
     <div class="bg-white rounded-lg shadow-md p-6">
         <div class="flex items-center justify-between mb-4">
