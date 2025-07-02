@@ -1,0 +1,13 @@
+/prints
+/vendor
+/node_modules
+/assets/css/style.css
+.env
+.idea
+*.log
+.DS_Store
+*.bak
+*.swp
+*.zip
+*.tar.gz
+tailwindcss.exe
