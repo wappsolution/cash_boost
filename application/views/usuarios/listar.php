@@ -1,6 +1,8 @@
 <div class="container mx-auto p-4">
-    <h1 class="text-3xl font-bold text-gray-800 mb-6 flex items-center"><i class="fas fa-users mr-3"></i> Lista de Usuários</h1>
-    <a href="<?php echo site_url('usuarios/criar'); ?>" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4 inline-block">Criar Novo Usuário</a>
+    <div class="flex justify-between items-center mb-6">
+        <h1 class="text-3xl font-bold text-gray-800 flex items-center"><i class="fas fa-users mr-3"></i> Lista de Usuários</h1>
+        <a href="<?php echo site_url('usuarios/criar'); ?>" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-block">Criar Novo Usuário</a>
+    </div>
 
     <?php if (empty($usuarios)): ?>
         <p>Nenhum usuário encontrado.</p>
