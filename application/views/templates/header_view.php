@@ -41,6 +41,15 @@
                     <a href="<?php echo site_url('pagamentos'); ?>" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white flex items-center">
                         <i class="fas fa-dollar-sign mr-3"></i> <span class="menu-text">Pagamentos</span>
                     </a>
+                    <div class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white flex items-center cursor-pointer">
+                        <i class="fas fa-users-cog mr-3"></i> <span class="menu-text">Participações</span>
+                    </div>
+                    <a href="<?php echo site_url('participacoes/ativas'); ?>" class="block py-2.5 pl-10 pr-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white flex items-center text-sm">
+                        <i class="fas fa-chart-pie mr-3"></i> <span class="menu-text">Ativas (Cards)</span>
+                    </a>
+                    <a href="<?php echo site_url('participacoes'); ?>" class="block py-2.5 pl-10 pr-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white flex items-center text-sm">
+                        <i class="fas fa-mobile-alt mr-3"></i> <span class="menu-text">Mobile (Simulador)</span>
+                    </a>
                     <a href="#" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white flex items-center">
                         <i class="fas fa-chart-line mr-3"></i> <span class="menu-text">Relatórios</span>
                     </a>

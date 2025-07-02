@@ -39,6 +39,11 @@
             <input type="number" step="0.01" name="gasto" id="gasto" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" value="<?php echo set_value('gasto', $campanha->gasto); ?>">
         </div>
 
+        <div class="mb-4">
+            <label for="premio" class="block text-gray-700 text-sm font-bold mb-2">Prêmio:</label>
+            <input type="number" step="0.01" name="premio" id="premio" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" value="<?php echo set_value('premio', $campanha->premio); ?>">
+        </div>
+
         <div class="flex items-center justify-between">
             <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
                 Atualizar Campanha

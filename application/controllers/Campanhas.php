@@ -33,6 +33,7 @@ class Campanhas extends CI_Controller {
         $this->form_validation->set_rules('data_fim', 'Data de Fim', 'required|callback_validar_data');
         $this->form_validation->set_rules('recorrencia', 'Recorrência', 'required');
         $this->form_validation->set_rules('gasto', 'Gasto', 'required|numeric|greater_than_equal_to[0]');
+        $this->form_validation->set_rules('premio', 'Prêmio', 'required|numeric|greater_than_equal_to[0]');
 
         // AIDEV-TODO: Implementar validação de datas e recorrência mais robusta
 
@@ -46,6 +47,7 @@ class Campanhas extends CI_Controller {
                 'data_fim' => $this->input->post('data_fim'),
                 'recorrencia' => $this->input->post('recorrencia'),
                 'gasto' => $this->input->post('gasto'),
+                'premio' => $this->input->post('premio'),
                 'status' => 1 // Ativa por padrão ao criar
             );
 
@@ -75,6 +77,7 @@ class Campanhas extends CI_Controller {
         $this->form_validation->set_rules('data_fim', 'Data de Fim', 'required|callback_validar_data');
         $this->form_validation->set_rules('recorrencia', 'Recorrência', 'required');
         $this->form_validation->set_rules('gasto', 'Gasto', 'required|numeric|greater_than_equal_to[0]');
+        $this->form_validation->set_rules('premio', 'Prêmio', 'required|numeric|greater_than_equal_to[0]');
 
         // AIDEV-TODO: Implementar validação de datas e recorrência mais robusta
 
@@ -87,7 +90,8 @@ class Campanhas extends CI_Controller {
                 'data_inicio' => $this->input->post('data_inicio'),
                 'data_fim' => $this->input->post('data_fim'),
                 'recorrencia' => $this->input->post('recorrencia'),
-                'gasto' => $this->input->post('gasto')
+                'gasto' => $this->input->post('gasto'),
+                'premio' => $this->input->post('premio')
             );
 
             $this->Campanhas_model->update($id, $data);

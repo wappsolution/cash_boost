@@ -18,6 +18,7 @@
                         <th class="py-2 px-4 border-b">Data Fim</th>
                         <th class="py-2 px-4 border-b">Recorrência</th>
                         <th class="py-2 px-4 border-b">Gasto</th>
+                        <th class="py-2 px-4 border-b">Prêmio</th>
                         <th class="py-2 px-4 border-b">Status</th>
                         <th class="py-2 px-4 border-b">Ações</th>
                     </tr>
@@ -32,6 +33,7 @@
                             <td class="py-2 px-4 border-b text-center"><?php echo $campanha->data_fim; ?></td>
                             <td class="py-2 px-4 border-b text-center"><?php echo $campanha->recorrencia; ?></td>
                             <td class="py-2 px-4 border-b text-center"><?php echo number_format($campanha->gasto, 2, ',', '.'); ?></td>
+                            <td class="py-2 px-4 border-b text-center">R$ <?php echo number_format($campanha->premio, 2, ',', '.'); ?></td>
                             <td class="py-2 px-4 border-b text-center">
                                 <?php if ($campanha->status == 1): ?>
                                     <span class="bg-green-200 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Ativa</span>
