@@ -145,11 +145,11 @@ class Test extends CI_Controller {
 ## ✅ To-do por Sprint (Linha de Desenvolvimento)
 
 ### 🟠 Sprint 1 – Base do Projeto
-- [ ] Configurar estrutura do CodeIgniter 3
-- [ ] Criar layout base com TailwindCSS (header, footer, container)
-- [ ] Implementar sistema de login com sessões
-- [ ] Criar middleware ou checagem de permissões (Admin, Supervisor, Financeiro)
-- [ ] Criar controller de testes (`Test.php`) com métodos básicos
+- [x] Configurar estrutura do CodeIgniter 3
+- [x] Criar layout base com TailwindCSS (header, footer, container)
+- [x] Implementar sistema de login com sessões
+- [x] Criar middleware ou checagem de permissões (Admin, Supervisor, Financeiro)
+- [x] Criar controller de testes (`Test.php`) com métodos básicos
 
 ### 🟡 Sprint 2 – Campanhas
 - [x] Criar `Campanhas_model.php` com métodos: `create`, `update`, `getAll`, `getById`, `delete`
@@ -166,12 +166,12 @@ class Test extends CI_Controller {
 - [ ] Registrar logs de validação (quem validou, quando, status)
 
 ### 🔵 Sprint 4 – Pagamentos
-- [ ] Criar `Pagamento_model.php` e `Pagamentos.php`
-- [ ] Listar participações validadas e pendentes de pagamento
-- [ ] Simular integração com APIs de pagamento (Pix, Cartão, Plataforma)
-- [ ] Atualizar status de pagamento manualmente
-- [ ] Criar histórico de pagamentos por usuário
-- [ ] Exportar pagamentos em CSV
+- [x] Criar `Pagamento_model.php` e `Pagamentos.php`
+- [x] Listar participações validadas e pendentes de pagamento
+- [x] Simular integração com APIs de pagamento (Pix, Cartão, Plataforma)
+- [x] Atualizar status de pagamento manualmente
+- [x] Criar histórico de pagamentos por usuário
+- [x] Exportar pagamentos em CSV
 
 ### 🟣 Sprint 5 – Relatórios e Dashboard
 - [ ] Criar painel com KPIs (total gasto, participações, etc.)

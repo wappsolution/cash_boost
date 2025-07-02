@@ -38,7 +38,7 @@
                     <a href="<?php echo site_url('usuarios'); ?>" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white flex items-center">
                         <i class="fas fa-users mr-3"></i> <span class="menu-text">Usuários</span>
                     </a>
-                    <a href="#" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white flex items-center">
+                    <a href="<?php echo site_url('pagamentos'); ?>" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white flex items-center">
                         <i class="fas fa-dollar-sign mr-3"></i> <span class="menu-text">Pagamentos</span>
                     </a>
                     <a href="#" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white flex items-center">
