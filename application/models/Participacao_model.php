@@ -27,7 +27,7 @@ class Participacao_model extends CI_Model {
 
     // AIDEV-GENERATED: Método para obter uma participação por ID
     public function getById($id) {
-        $this->db->select('p.*, c.nome as campanha_nome, u.nome as usuario_nome');
+        $this->db->select('p.*, c.nome as campanha_nome, c.premio, u.nome as usuario_nome');
         $this->db->from('participacoes p');
         $this->db->join('campanhas c', 'c.id = p.campanha_id', 'left');
         $this->db->join('usuarios u', 'u.id = p.usuario_id', 'left');
@@ -76,5 +76,16 @@ class Participacao_model extends CI_Model {
         $this->db->group_by('c.id');
         $this->db->order_by('c.data_fim', 'ASC');
         return $this->db->get()->result();
+    }
+
+    // AIDEV-GENERATED: Método para contar o total de todas as participações
+    public function countAllParticipations() {
+        return $this->db->count_all_results('participacoes');
+    }
+
+    // AIDEV-GENERATED: Método para atualizar o status de uma participação
+    public function updateStatusParticipacao($participacao_id, $new_status) {
+        $this->db->where('id', $participacao_id);
+        return $this->db->update('participacoes', ['status_participacao' => $new_status, 'updated_at' => date('Y-m-d H:i:s')]);
     }
 }

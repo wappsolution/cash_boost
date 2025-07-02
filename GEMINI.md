@@ -159,11 +159,11 @@ class Test extends CI_Controller {
 - [x] Validar datas e recorrência
 
 ### 🟢 Sprint 3 – Participações e Validações
-- [ ] Criar `Participacao_model.php` e `Participacoes.php`
-- [ ] Criar botão "Quero Participar" com POST controlado
-- [ ] Criar `Validacao_model.php` e `Validacoes.php` para validação de metas
-- [ ] Implementar permissões específicas para supervisores
-- [ ] Registrar logs de validação (quem validou, quando, status)
+- [x] Criar `Participacao_model.php` e `Participacoes.php`
+- [x] Criar botão "Quero Participar" com POST controlado
+- [x] Criar `Validacao_model.php` e `Validacoes.php` para validação de metas
+- [x] Implementar permissões específicas para supervisores
+- [x] Registrar logs de validação (quem validou, quando, status)
 
 ### 🔵 Sprint 4 – Pagamentos
 - [x] Criar `Pagamento_model.php` e `Pagamentos.php`
@@ -174,11 +174,11 @@ class Test extends CI_Controller {
 - [x] Exportar pagamentos em CSV
 
 ### 🟣 Sprint 5 – Relatórios e Dashboard
-- [ ] Criar painel com KPIs (total gasto, participações, etc.)
-- [ ] Gerar gráficos com Chart.js ou similar
-- [ ] Ranking de resgates e participação
-- [ ] Criar filtros por período, campanha, status
-- [ ] Exportação de relatórios (CSV)
+- [x] Criar painel com KPIs (total gasto, participações, etc.)
+- [x] Gerar gráficos com Chart.js ou similar
+- [x] Ranking de resgates e participação
+- [x] Criar filtros por período, campanha, status
+- [x] Exportação de relatórios (CSV)
 
 ## Instrução para Assistentes de IA
 
