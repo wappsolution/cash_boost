@@ -39,7 +39,7 @@
             <h2 class="text-lg font-semibold text-gray-700">Participações</h2>
             <div class="text-purple-500 text-2xl"><i class="fas fa-users"></i></div>
         </div>
-        <p class="text-3xl font-bold text-gray-900">567</p>
+        <p class="text-3xl font-bold text-gray-900"><?php echo $total_participacoes; ?></p>
         <p class="text-sm text-gray-500">+12% em relação ao ano passado</p>
     </div>
 </div>

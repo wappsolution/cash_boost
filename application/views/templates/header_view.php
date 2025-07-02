@@ -50,9 +50,14 @@
                     <a href="<?php echo site_url('participacoes'); ?>" class="block py-2.5 pl-10 pr-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white flex items-center text-sm">
                         <i class="fas fa-mobile-alt mr-3"></i> <span class="menu-text">Mobile (Simulador)</span>
                     </a>
-                    <a href="#" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white flex items-center">
+                    <a href="<?php echo site_url('relatorios'); ?>" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white flex items-center">
                         <i class="fas fa-chart-line mr-3"></i> <span class="menu-text">Relatórios</span>
                     </a>
+                    <?php if ($this->session->userdata('user_profile') == 'admin' || $this->session->userdata('user_profile') == 'supervisor'): ?>
+                        <a href="<?php echo site_url('validacoes'); ?>" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white flex items-center">
+                            <i class="fas fa-clipboard-check mr-3"></i> <span class="menu-text">Validação de Metas</span>
+                        </a>
+                    <?php endif; ?>
                 </nav>
             </aside>
 

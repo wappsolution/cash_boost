@@ -12,9 +12,11 @@ class Dashboard extends CI_Controller {
 
     public function index() {
         $this->load->model('Campanhas_model');
+        $this->load->model('Participacao_model');
         $data['total_gasto'] = $this->Campanhas_model->getTotalGasto();
         $data['campanhas_ativas'] = $this->Campanhas_model->countActiveCampanhas();
         $data['novas_campanhas_semana'] = $this->Campanhas_model->countNewCampanhasThisWeek();
+        $data['total_participacoes'] = $this->Participacao_model->countAllParticipations();
 
         // AIDEV-GENERATED: Dados para o Campeão de Resgates
         $nomes_funcionarios = ['João Silva', 'Maria Souza', 'Pedro Almeida', 'Ana Costa', 'Carlos Lima'];
