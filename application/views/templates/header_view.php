@@ -18,7 +18,7 @@
                 <a href="<?php echo site_url('dashboard'); ?>" class="text-xl font-semibold text-gray-800 hover:text-gray-600">Cash Boost Admin</a>
             </div>
             <div class="flex items-center space-x-4">
-                <span class="text-gray-600">Bem-vindo, Admin!</span>
+                <span class="text-gray-600">Bem-vindo, <?php echo $this->session->userdata('user_name'); ?>!</span>
                 <a href="<?php echo base_url('login/logout'); ?>" class="text-red-500 hover:text-red-700">
                     <i class="fas fa-sign-out-alt"></i> Sair
                 </a>
@@ -35,7 +35,7 @@
                     <a href="<?php echo site_url('campanhas'); ?>" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white flex items-center">
                         <i class="fas fa-bullhorn mr-3"></i> <span class="menu-text">Campanhas</span>
                     </a>
-                    <a href="#" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white flex items-center">
+                    <a href="<?php echo site_url('usuarios'); ?>" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white flex items-center">
                         <i class="fas fa-users mr-3"></i> <span class="menu-text">Usuários</span>
                     </a>
                     <a href="#" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white flex items-center">
