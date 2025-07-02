@@ -152,11 +152,11 @@ class Test extends CI_Controller {
 - [ ] Criar controller de testes (`Test.php`) com métodos básicos
 
 ### 🟡 Sprint 2 – Campanhas
-- [ ] Criar `Campanhas_model.php` com métodos: `create`, `update`, `getAll`, `getById`, `delete`
-- [ ] Criar `Campanhas.php` (controller) com as regras de negócio
-- [ ] Criar views: `listar`, `criar`, `editar` com validações
-- [ ] Permitir ativar/desativar campanha
-- [ ] Validar datas e recorrência
+- [x] Criar `Campanhas_model.php` com métodos: `create`, `update`, `getAll`, `getById`, `delete`
+- [x] Criar `Campanhas.php` (controller) com as regras de negócio
+- [x] Criar views: `listar`, `criar`, `editar` com validações
+- [x] Permitir ativar/desativar campanha
+- [x] Validar datas e recorrência
 
 ### 🟢 Sprint 3 – Participações e Validações
 - [ ] Criar `Participacao_model.php` e `Participacoes.php`
